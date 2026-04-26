@@ -4,6 +4,7 @@ const morgan = require("morgan");
 const uploadRoutes = require("./routes/uploadRoutes");
 const errorHandler = require("./middleware/errorHandler");
 const chatRoutes = require("./routes/chatRoutes");
+const agentRoutes = require("./routes/agentRoutes");
 
 const app = express();
 
@@ -16,6 +17,7 @@ app.use(morgan("dev"));
 
 app.use("/api/upload", uploadRoutes);
 app.use("/api/chat", chatRoutes);
+app.use("/api/agent", agentRoutes);
 
 /*
 Global Error Handler
