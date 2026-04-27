@@ -5,7 +5,10 @@ const uploadRoutes = require("./routes/uploadRoutes");
 const errorHandler = require("./middleware/errorHandler");
 const chatRoutes = require("./routes/chatRoutes");
 const agentRoutes = require("./routes/agentRoutes");
+<<<<<<< HEAD
 const bookRoutes = require("./routes/bookRoutes");
+=======
+>>>>>>> 492d4c0928dad2e50b58b28bd3fa266318868b29
 
 const app = express();
 
@@ -19,7 +22,10 @@ app.use(morgan("dev"));
 app.use("/api/upload", uploadRoutes);
 app.use("/api/chat", chatRoutes);
 app.use("/api/agent", agentRoutes);
+<<<<<<< HEAD
 app.use("/api/books", bookRoutes);
+=======
+>>>>>>> 492d4c0928dad2e50b58b28bd3fa266318868b29
 
 /*
 Global Error Handler

@@ -16,7 +16,12 @@ const askQuestion = async (req, res, next) => {
     /*
     Retrieve Relevant Chunks
     */
+<<<<<<< HEAD
     const chunks = await retrieveRelevantChunks(bookId, question);  //best matching chunk
+=======
+    // const chunks = await retrieveRelevantChunks(question);
+    const chunks = await retrieveRelevantChunks(bookId, question);
+>>>>>>> 492d4c0928dad2e50b58b28bd3fa266318868b29
 
     /*
     Build Context

@@ -15,9 +15,15 @@ const runAgent = async (req, res, next) => {
 
     res.status(200).json({
       success: true,
+<<<<<<< HEAD
       intent: result.intent,   //summarize
       answer: result.answer,   //Chapter 2 discusses...
       sources: result.sources   //"Page 15", "Page 16"
+=======
+      intent: result.intent,
+      answer: result.answer,
+      sources: result.sources
+>>>>>>> 492d4c0928dad2e50b58b28bd3fa266318868b29
     });
   } catch (error) {
     next(error);

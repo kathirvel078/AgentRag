@@ -27,7 +27,11 @@ const uploadPDF = async (req, res, next) => {
       originalFileName: req.file.originalname,
       totalPages: extractedData.totalPages,
       totalChunks: chunks.length,
+<<<<<<< HEAD
       processingStatus: "processing", //Because vector DB storage may still be running.
+=======
+      processingStatus: "processing",
+>>>>>>> 492d4c0928dad2e50b58b28bd3fa266318868b29
     });
 
     //store in vector DB

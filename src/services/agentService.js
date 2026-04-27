@@ -55,6 +55,7 @@ ${query}
 Response:
 `;
 
+<<<<<<< HEAD
   // let answer = await generateAnswer(context, finalPrompt);
   let answer = await generateAnswer(
   context,
@@ -65,6 +66,14 @@ Response:
   answer.toLowerCase().includes("not available") ||
   answer.length < 30
 ){
+=======
+  let answer = await generateAnswer(context, finalPrompt);
+
+  if (
+    answer.toLowerCase().includes("not available") ||
+    answer.length < 100
+  ) {
+>>>>>>> 492d4c0928dad2e50b58b28bd3fa266318868b29
     chunks = await retrieveRelevantChunks(bookId, query, 8);
 
     context = chunks

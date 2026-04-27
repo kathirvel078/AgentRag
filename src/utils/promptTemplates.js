@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const buildRAGPrompt = (
   context,
   question,
@@ -27,11 +28,32 @@ USER QUESTION:
 ${question}
 
 FINAL ANSWER:
+=======
+const buildRAGPrompt = (context, question) => {
+  return `
+You are an AI assistant for a technical book.
+
+Rules:
+1. Answer ONLY using the provided context
+2. Do NOT use outside knowledge
+3. If answer is not found, say:
+   "This information is not available in the book."
+4. Keep answers clear and professional
+
+Context:
+${context}
+
+User Question:
+${question}
+
+Answer:
+>>>>>>> 492d4c0928dad2e50b58b28bd3fa266318868b29
 `;
 };
 
 module.exports = {
   buildRAGPrompt
+<<<<<<< HEAD
 };
 
 
@@ -59,3 +81,6 @@ module.exports = {
 // module.exports = {
 //   buildRAGPrompt
 // };
+=======
+};
+>>>>>>> 492d4c0928dad2e50b58b28bd3fa266318868b29
