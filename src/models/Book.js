@@ -22,7 +22,7 @@ const bookSchema = new mongoose.Schema(
     },
 
     totalChunks: {
-      type: Number
+      type: Number //number
     },
 
     processingStatus: {
